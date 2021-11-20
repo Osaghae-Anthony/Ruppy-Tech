@@ -740,6 +740,11 @@
         padding-right: 15px;
     }
 }
+@media (max-width: 414px){
+    #second{
+        min-height: 130vh;
+    }
+}
 @media (max-width: 400px){
     #hero .writeup{
         width: 350px;
