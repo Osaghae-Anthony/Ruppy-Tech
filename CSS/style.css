@@ -1,0 +1,1023 @@
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Genos&family=Pacifico&family=Patrick+Hand&family=Playfair+Display&family=Quicksand&family=Work+Sans&display=swap');
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+}
+#nav a{
+    color: rgba(240, 210, 126, 0.658);
+    font-size: 30px;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    font-family: 'Pacifico', cursive;
+}
+#nav a:hover{
+    color: rgba(240, 210, 126, 0.959);
+}
+#nav .logo, #nav .aboutus{
+    width: 50%;
+}
+#nav .ab{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+    padding-left: 500px;
+}
+#hero{
+    background-image: url(../images/blacklap.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(233, 219, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero .writeup{
+    background-color: rgba(255, 255, 255, 0.068);
+    width: 450px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.267);
+    border: 2px solid rgba(77, 76, 76, 0.473);
+}
+#hero .writeup h1{
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+}
+#hero .writeup h2{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-family: 'Genos', sans-serif;
+}
+#hero .writeup h3{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+/* second section */
+#second{
+    width: 100%;
+    background: linear-gradient(to right, rgba(77, 77, 77, 0.527), rgb(48, 49, 51));
+}
+#second h6{
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+#second .wwd{
+    width: 250px;
+    height: 330px;
+    margin:  20px 15px;
+    padding: 20px;
+    border: 10px solid white;
+    background: rgb(255, 255, 255);
+}
+#second .repairs, #second .consulting{
+    border: 10px solid rgb(131, 122, 98);
+}
+#second .bitcoin, #second .webdev{
+    border: 10px solid rgba(240, 210, 126, 0.822);
+}
+#second h1{
+    color: rgba(218, 178, 70, 0.822);
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+#second a{
+    color: rgba(255, 153, 0, 0.692);
+    font-size: 15px;
+    position: relative;
+}
+#second a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 153, 0, 0.692);
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    
+    transition: transform 0.5s ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#second .wwd:hover a::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#second .wwd:hover{
+    background: rgba(255, 255, 255, 0.836);
+}
+#second .topcircle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-bottom-right-radius: 150px;
+    background: linear-gradient(to right, rgba(255, 153, 0, 0.918), rgba(218, 179, 70, 0.103));
+    margin-right: 1300px;
+    margin-bottom: 545px;
+}
+#second .downcircle{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 150px;
+    background: linear-gradient(to right, rgba(255, 153, 0, 0.87), rgba(218, 179, 70, 0.103));
+    margin-left: 1300px;
+    margin-top: 560px;
+}
+
+/* third section */
+#third{
+    background: linear-gradient(to right, rgba(77, 77, 77, 0.527), rgb(48, 49, 51));
+    color: white;
+    width: 100%;
+}
+#third h1{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+#third h2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align: center;
+    width: 70%;
+}
+#third .testimonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#third .test{
+    height: 280px;
+    width: 250px;
+    border: 2px solid rgba(255, 235, 205, 0.5);
+    border-radius: 5px;
+    margin: 30px 18px;
+    box-shadow: 3px 3px 10px currentColor;
+}
+#third .top{
+    height: 230px;
+    width: 250px;
+}
+#third .aone, #third .bone{
+    display: flex;
+}
+#third h3{
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    width: 80%;
+    text-align: center;
+}
+#third .inu h3{
+    font-size: 17px;
+}
+#third h4{
+    color: black;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 25px;
+}
+/* footer section */
+#contactus{
+    background-image: url(../images/whitelaptop.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    color: white;
+}
+#contactus .contact{
+    height: 400px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.61);
+    border: 1px solid rgba(255, 153, 0, 0.555);
+    padding: 10px 0;
+}
+#contactus h1{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+}
+#contactus h2{
+    font-weight: 300;
+    font-size: 18px;
+    
+    text-align: center;
+    width: 70%;
+}
+#contactus .fas{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#contactus h3{
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#contactus h4{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+#contactus .righttop h4{
+    padding: 0;
+    margin: 0;
+}
+#contactus .lefttop, #contactus .righttop, #contactus .leftbot, #contactus .rightbot{
+    width: 50%;
+    padding: 10px 50px;
+}
+#contactus .fab{
+    padding: 0 5px;
+    font-size: 18px;
+}
+#contactus .fab:hover{
+    color: rgba(224, 189, 189, 0.452);
+    cursor: pointer;
+}
+/* end of footer section */
+/* MORE.HTML */
+#main{
+    background-image: url(../images/closebook.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: blanchedalmond;
+}
+#main .wwd{
+    border: 3px solid rgba(255, 153, 0, 0.158);
+    border-radius: 50px;
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    box-shadow: 0.5px 0.5px 18px rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(5px);
+}
+#main h1{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 10px;
+}
+#main p{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: 'Quicksans', sans-serif;
+}
+#main a{
+    color: rgba(255, 153, 0, 0.692);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+#main a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 153, 0, 0.692);
+    position: absolute;
+    top: 20px;
+    right: 1px;
+    
+    transition: transform 0.5s ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+#main .wwd:hover a::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#main .wwd:hover{
+    background: rgba(0, 0, 0, 0.5);
+} 
+/* about us page */
+#aboutone{
+    color: white;
+    min-height: 100vh;
+}
+#aboutone .history{
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    padding: 20px 30px;
+    height: 530px;
+    width: 800px;
+}
+#aboutone h1{
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    font-family: 'Work Sans', sans-serif;
+}
+#aboutone p{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVENESS STARTS HERE!! */
+/* TABLET MODE */
+@media (max-width: 768px) and (min-width: 400px){
+    #nav{
+        min-height: 5vh;
+    }
+    #nav a{
+        font-size: 20px;
+        padding: 6px 30px;
+        letter-spacing: 1.5px;
+    }
+    #nav .ab{
+        letter-spacing: 1px;
+        font-size: 20px;
+        padding-left: 200px;
+    }
+    #hero .writeup{
+        width: 400px;
+        height: 150px;
+        padding: 10px 20px;
+    }
+    #hero .writeup h1{
+        font-size: 40px;
+        letter-spacing: .5px;
+    }
+    #hero .writeup h2{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    #second h6{
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+    #second .wwd{
+        width: 220px;
+        height: 200px;
+        margin:  10px 20px;
+        padding: 15px;
+    }
+    #second .repairs, #second .consulting{
+        border: 5px solid rgb(131, 122, 98);
+    }
+    #second .bitcoin, #second .webdev{
+        border: 5px solid rgba(240, 210, 126, 0.822);
+    }
+    #second h1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #second p{
+        font-size: 12px;
+    }
+    #second a{
+        font-size: 13px;
+    }
+    #second .topcircle, #second .downcircle{
+        display: none;
+    } 
+    #third h1{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    #third h2{
+        font-size: 13px;
+        letter-spacing: .5px;
+        line-height: 20px;
+        width: 80%;
+    }
+    #third .test{
+        height: 210px;
+        width: 220px;
+        margin: 10px 20px;
+        box-shadow: 2px 2px 10px currentColor;
+    }
+    #third .top{
+        height: 175px;
+        width: 220px;
+    }
+    #third h3{
+        font-size: 15px;
+        width: 80%;
+    }
+    #third .inu h3{
+        font-size: 15px;
+    }
+    #third h4{
+        font-size: 15px;
+        padding: 0 20px;
+    }
+    #third .testimonial{
+        display: block;
+        width: 100%;
+        padding-left: 80px;
+    }
+    #contactus .contact{
+        height: 350px;
+        width: 500px;
+    }
+    #contactus h1{
+        font-size: 28px;
+    }
+    #contactus h2{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    #contactus h3{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #contactus h4{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #contactus .fab{
+        font-size: 15px;
+    }
+    /* MORE.HTML */
+    #main .wwd{
+        border: 2px solid rgba(255, 153, 0, 0.158);
+        width: 400px;
+        height: 300px;
+        backdrop-filter: blur(15px);
+    }
+    #main h1{
+        font-size: 25px;
+    }
+    #main p{
+        font-size: 14px;
+    }
+    #main a{
+        font-size: 14px;
+    }
+    /* ABOUT.HTML */
+    #aboutone .history{
+        padding: 20px 30px;
+        height: 530px;
+        width: 800px;
+    }
+    #aboutone h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    #aboutone p{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 767px){
+    /* MORE.HTML */
+    #main .wwd{
+        width: 400px;
+        height: 350px;
+    }
+    /* ABOUT.HTML */
+    #aboutone{
+        min-height: 110vh;
+    }
+    #aboutone .history{
+        padding: 15px 20px;
+        height: 600px;
+        width: 780px;
+    }
+    #aboutone h1{
+        font-size: 26px;
+        font-weight: 400;
+    }
+    #aboutone p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 700px){
+    #third h2{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    #third .testimonial{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 655px){
+    #nav .ab{
+        font-size: 18px;
+        padding-left: 180px;
+    }
+}
+@media (max-width: 597px){
+    #nav .ab{
+        font-size: 15px;
+        padding-left: 160px;
+    }
+}
+@media (max-width: 530px){
+    #nav .ab{
+        padding-left: 140px;
+    }
+}
+@media (max-width: 519px){
+    #nav .ab{
+        font-size: 15px;
+        padding-left: 140px;
+    }
+    #second h6{
+        font-size: 25px;
+    }
+    #second .brother{
+        display: block;
+    }
+    #second .wwd{
+        width: 220px;
+        height: 185px;
+        margin:  10px 15px;
+    }
+    /* #second .topcircle, #second .downcircle{
+        display: none;
+    }  */
+}
+@media (max-width: 510px){
+    #third h1{
+        font-size: 20px;
+    }
+    #third h2{
+        font-size: 13px;
+        line-height: 18px;
+        width: 75%;
+    }
+    #third .test{
+        height: 200px;
+        width: 210px;
+        margin: 10px 13.5px;
+    }
+    #third .top{
+        height: 165px;
+        width: 210px;
+    }
+    #third h3{
+        font-size: 13.5px;
+    }
+    #third .inu h3{
+        font-size: 13.5px;
+    }
+    #third h4{
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    #third .testimonial{
+        padding-left: 5px;
+    }
+}
+@media (max-width: 500px){
+    #hero .writeup h1{
+        font-size: 30px;
+    }
+    #hero .writeup h2{
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+    #contactus .contact{
+        width: 400px;
+        height: 350px;
+    }
+    #contact .fas{
+        font-size: 12px;
+    }
+    #contactus h1{
+        font-size: 25px;
+    }
+    #contactus h2{
+        font-size: 13.5px;
+    }
+    #contactus h3{
+        font-size: 13px;
+        letter-spacing: 2.5px;
+    }
+    #contactus h4{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /* ABOUT.HTML */
+    #aboutone{
+        min-height: 150px;
+    }
+    #aboutone .history{
+        padding: 20px 30px;
+        height: 630px;
+        width: 800px;
+    }
+    #aboutone h1{
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    #aboutone p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 499px){
+    #nav .ab{
+        font-size: 15px;
+        padding-left: 120px;
+    }
+    #second h6{
+        font-size: 23px;
+    }
+    #second .wwd{
+        width: 220px;
+        height: 185px;
+        margin:  10px 5px;
+    }
+    #second h1{
+        font-size: 14px;
+    }
+}
+@media (max-width: 460px){
+    #second h6{
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+    #second p{
+        line-height: 16px;
+    }
+    #second .wwd{
+        width: 210px;
+        height: 185px;
+        margin:  8px 3px;
+    }
+    #third .testimonial{
+        padding-left: 1.5px;
+    }
+    #third .test{
+        margin: 10px 8px;
+    }
+}
+@media (max-width: 450px){
+    #nav .ab{
+        font-size: 15px;
+        padding-left: 100px;
+    }
+}
+@media (max-width: 432px){
+    #second h6{
+        font-size: 23px;
+        margin-bottom: 18px;
+    }
+    #second .wwd{
+        width: 210px;
+        height: 185px;
+        margin:  8px 1px;
+    }
+    #second .repairs, #second .consulting{
+        border: 2px solid rgb(131, 122, 98);
+    }
+    #second .bitcoin, #second .webdev{
+        border: 2px solid rgba(240, 210, 126, 0.822);
+    }
+    #third .testimonial{
+        padding-left: 1.5px;
+    }
+    #third h2{
+        width: 90%;
+    }
+    #third .test{
+        height: 190px;
+        width: 200px;
+        margin: 10px 5px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 0px ;
+    }
+    #third .top{
+        height: 160px;
+        width: 200px;
+    }
+    #third h4{
+        padding-right: 15px;
+    }
+}
+@media (max-width: 400px){
+    #hero .writeup{
+        width: 350px;
+        height: 150px;
+    }
+    #hero .writeup h1{
+        font-size: 28px;
+    }
+    #hero .writeup h2{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #second{
+        min-height: 160vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE DEVICE RESPONISVENESS */
+@media (max-width: 375px) and (min-width: 250px){
+    #nav{
+        min-height: 3vh;
+    }
+    #nav a{
+        font-size: 16px;
+        padding: 4px 20px;
+    }
+    #nav .ab{
+        font-size: 13px;
+        padding-left: 50px;
+    }
+    #hero .writeup{
+        width: 300px;
+        height: 100px;
+        padding: 10px 20px;
+    }
+    #hero .writeup h1{
+        font-size: 25px;
+    }
+    #hero .writeup h2{
+        font-size: 13px;
+    }
+    #second{
+        min-height: 150vh;
+    }
+    #second h6{
+        font-size: 22px;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+    }
+    #second .wwd{
+        width: 210px;
+        height: 170px;
+        margin: 8px 20px;
+        padding: 15px;
+        background: rgba(121, 114, 114, 0.2);
+    } 
+    #second h1{
+        font-size: 14px;
+    }
+    #second p{
+        font-size: 12px;
+    }
+    #second a{
+        font-size: 12px;
+        color: black;
+    }
+    #second .topcircle, #second .downcircle{
+        display: none;
+    } 
+    #third{
+        min-height: 180vh;
+    }
+    #third h1{
+        font-size: 21px;
+    }
+    #third h2{
+        font-size: 15px;
+        line-height: 20px;
+        width: 63%;
+    }
+    #third span{
+        display: none;
+    }
+    #third .testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+    #third .aone, #third .bone{
+        display: flex;
+        flex-direction: column;
+    }
+    #third .test{
+        height: 200px;
+        width: 220px;
+        margin: 10px 20px;
+        border: 1px solid rgba(255, 235, 205, 0.363);
+        box-shadow: 2px 2px 10px currentColor;
+    }
+    #third .top{
+        height: 160px;
+        width: 220px;
+    }
+    #third h3, #third .inu h3{
+        font-size: 14px;
+        width: 80%;
+    }
+    #third h4{
+        font-size: 14px;
+        padding: 0px 20px;
+    }
+    #contactus .contact{
+        height: 350px;
+        width: 350px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px ;
+    }
+    #contactus h1{
+        font-size: 20px;
+    }
+    #contactus h2{
+        font-size: 14px;
+        letter-spacing: 1px;
+        width: 70%;
+    }
+    #contactus .fas{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    #contactus h3{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    #contactus h4{
+        font-size: 12px;
+        line-height: 19px;
+    }
+    #contactus .righttop h4{
+        padding: 0;
+        margin: 0;
+    }
+    #contactus .lefttop, #contactus .righttop, #contactus .leftbot, #contactus .rightbot{
+        width: 50%;
+        padding: 10px 50px;
+    }
+    #contactus .fab{
+        padding: 0 5px;
+        font-size: 18px;
+    }
+    /* MORE.HTML */
+    #main .wwd{
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 350px;
+        height: 350px;
+        padding: 30px;
+        backdrop-filter: blur(15px);
+    }
+    #main h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    #main p{
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 19px;
+    }
+    #main a{
+        font-size: 15px;
+    }
+    /* about us page */
+    #aboutone{
+        min-height: 150vh;
+    }
+    #aboutone .history{
+        padding: 15px 15px;
+        height: 750px;
+        width: 800px;
+    }
+    #aboutone h1{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    #aboutone p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+
+
+@media (max-width: 330px) {
+    #contactus .contact{
+        height: 340px;
+        width: 320px;
+        padding: 10px;
+    }
+    #contactus h1{
+        font-size: 20px;
+    }
+    #contactus h2{
+        font-size: 14px;
+    }
+    #contactus .fas{
+        font-size: 13px;
+    }
+    #contactus h3{
+        font-size: 13px;
+    }
+    #contactus h4{
+        font-size: 12px;
+        line-height: 19px;
+    }
+    #contactus .lefttop, #contactus .righttop, #contactus .leftbot, #contactus .rightbot{
+        padding: 10px 50px;
+    }
+    #contactus .fab{
+        font-size: 15px;
+    }
+    /* MAIN.HTML */
+    #main .wwd{
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 300px;
+        height: 320px;
+        padding: 20px;
+        backdrop-filter: blur(15px);
+    }
+    #main h1{
+        font-size: 21px;
+    }
+    #main p{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 19px;
+    }
+    #main a{
+        font-size: 13px;
+    }
+    /* ABOUT.HTML */
+    #aboutone{
+        min-height: 160vh;
+    }
+    #aboutone .history{
+        padding: 15px 15px;
+        height: 800px;
+        width: 800px;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+    #hero .writeup{
+        width: 260px;
+        height: 120px;
+    }
+}
+    
+    
+
+
+
+
+
+
+
+
